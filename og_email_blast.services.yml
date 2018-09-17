@@ -1,0 +1,6 @@
+services:
+  og_email_blast.admin_routes:
+    class: Drupal\og_email_blast\EventSubscriber\OgEmailBlastAdminRoutesSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }

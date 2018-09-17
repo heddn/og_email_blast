@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_mail().
+ */
+function og_email_blast_mail($key, &$message, $params) {
+  if ($key != 'group_message') {
+    return;
+  }
+  $message['subject'] = $params['subject'];
+  $message['body'] = [$params['message']];
+}
