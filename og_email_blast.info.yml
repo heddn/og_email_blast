@@ -3,3 +3,6 @@ type: module
 description: Enables group admins to send e-mail blasts to group members.
 core: 8.x
 package: Organic Groups
+
+dependencies:
+  - og
